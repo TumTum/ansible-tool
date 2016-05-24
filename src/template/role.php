@@ -53,8 +53,12 @@ class role
      *
      * @param Filesystem $filesystem
      */
-    public function __construct(Filesystem $filesystem)
+    public function __construct(Filesystem $filesystem = null)
     {
+        if( $filesystem == null) {
+            $filesystem = new Filesystem();
+        }
+
         $this->fs = $filesystem;
     }
 
