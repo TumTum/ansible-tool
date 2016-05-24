@@ -1,0 +1,28 @@
+{
+    "name": "sd-tm/ansible-tools",
+    "description": "Ein Tool um die Ansible Role zu erstellen und verwalten",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tobias Matthaiou",
+            "email": "developer@tobimat.eu"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "symfony/console": "^3.0"
+    },
+    "require-dev": {
+        "herrera-io/box": "^1.6",
+        "phpspec/phpspec": "^2.5"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": {
+            "tm\\": "src"
+        }
+    }
+}
