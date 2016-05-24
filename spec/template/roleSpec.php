@@ -60,7 +60,7 @@ class roleSpec extends ObjectBehavior
         $filesystem->mkdir(Argument::is('roles/apache24/tasks'))->shouldBeCalled();
 
         // Create MainTask
-        $filesystem->dumpFile(Argument::is('roles/apache24/main.yml'), Argument::is("---\n- include: fpm.yml\n"))->shouldBeCalled();
+        $filesystem->dumpFile(Argument::is('roles/apache24/tasks/main.yml'), Argument::is("---\n- include: fpm.yml\n"))->shouldBeCalled();
 
         // Create INFO.md Markdown Task
         $filesystem->dumpFile(Argument::is('roles/apache24/INFO.md'), Argument::is('# Markdown File'))->shouldBeCalled();

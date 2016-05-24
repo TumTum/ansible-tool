@@ -108,7 +108,7 @@ class role
     protected function _makeMainTask()
     {
         $mainTaskFile = $this->_getMainTaskTemplate();
-        $filename = $this->getRoleDir() . DIRECTORY_SEPARATOR . $mainTaskFile->getFilePath();
+        $filename = $this->getRoleDir() . DIRECTORY_SEPARATOR . "tasks" . DIRECTORY_SEPARATOR . $mainTaskFile->getFilePath();
 
         $this->fs->dumpFile($filename, $mainTaskFile->getContent());
         return $this;
