@@ -1,0 +1,4 @@
+suites:
+    ansible_tool_suite:
+        namespace: sdtm\ansible_tool
+        psr4_prefix: sdtm\ansible_tool

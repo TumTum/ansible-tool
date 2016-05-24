@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "tm\\": "src"
+            "sdtm\\ansible_tool\\": "src"
         }
     }
 }
