@@ -1,0 +1,14 @@
+ROLE: apache24
+==============
+
+Standard application Apache von der Linux-Distribution. Lorem ipsum dolor
+sit amet, consectetuer adipiscing elit. Aenean commodo ligula.
+
+## Warum?
+
+Um einen Webserver zu betreiben braucht man Apache.
+
+## Project
+
+ - Sylius (seit %date%)
+ - Outfitter (seit %date%)
