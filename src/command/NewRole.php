@@ -50,18 +50,16 @@ class NewRole extends Command
         $output->writeln("");
 
         $question = new Question('In welche Project wird diese genutzt: ');
-        $projecte = [$helper->ask($input, $output, $question)];
-        $output->writeln("");
+        $projects = [$helper->ask($input, $output, $question)];
 
         $question = new Question('und noch? (leer lassen um aufzuhören): ');
         while  ($project = $helper->ask($input, $output, $question) ) {
-            $projecte[] = $project;
+            $projects[] = $project;
         }
         $output->writeln("");
 
-        $question = new Question('Welche Task soll es beinhalten ');
+        $question = new Question('Welche Tasks werden gebraucht? ');
         $tasks = [$helper->ask($input, $output, $question)];
-        $output->writeln("");
 
         $question = new Question('und noch? (leer lassen um aufzuhören): ');
         while  ($task = $helper->ask($input, $output, $question) ) {
@@ -78,7 +76,7 @@ class NewRole extends Command
         $infoMarkdown->setDescription($desciption);
         $infoMarkdown->setRolename($roleName);
         $infoMarkdown->setWhy($why);
-        $infoMarkdown->addProjects($projecte);
+        $infoMarkdown->addProjects($projects);
 
         $role_template->addMarkdownFile($infoMarkdown);
 
