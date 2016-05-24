@@ -10,4 +10,5 @@
 require __DIR__ . "/../vendor/autoload.php";
 
 $app = new Symfony\Component\Console\Application('ansible-tool', 'v0.0.1');
+$app->add(new \sdtm\ansible_tool\command\NewRole());
 $app->run();
