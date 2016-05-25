@@ -1,10 +1,10 @@
 Ansible Tool
 ============
 
-Eine Tool Bibliothek um Ansible zu verwalten
+Eine Tool Bibliothek rund um Ansible.
 
 ## Featuere
 
-1. Neue Rolle
-   Generiert eine neue Ansible Role in ``role/``
+#### 1. Neue Rolle Erstellen
 
+Anhand von Fragen wird eine neue 'role' für Ansible generiert.
