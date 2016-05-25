@@ -3,7 +3,7 @@ Ansible Tool
 
 Eine Tool Bibliothek rund um Ansible.
 
-## Featuere
+## Features
 
 #### 1. Neue Rolle Erstellen
 
