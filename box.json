@@ -1,0 +1,19 @@
+{
+    "chmod": "0755",
+    "directories": [
+        "src"
+    ],
+    "files": [
+        "LICENSE"
+    ],
+    "finder": [
+        {
+            "name": "*.php",
+            "exclude": ["Tests", "Spec"],
+            "in": "vendor"
+        }
+    ],
+    "main": "bin/ansible-tool",
+    "output": "builds/ansible-tool.phar",
+    "stub": true
+}
