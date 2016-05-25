@@ -1,12 +1,12 @@
 {
     "name": "sd-tm/ansible-tools",
-    "description": "Ein Tool um die Ansible Role zu erstellen und verwalten",
+    "description": "A tool to Generate Ansible Role Folders",
     "type": "project",
     "license": "MIT",
     "authors": [
         {
             "name": "Tobias Matthaiou",
-            "email": "developer@tobimat.eu"
+            "email": "tm@solutionDrive.de"
         }
     ],
     "minimum-stability": "beta",
